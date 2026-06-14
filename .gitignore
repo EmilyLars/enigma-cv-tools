@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Output files — don't commit generated CSVs or reports
+*_publications.csv
+*_reconciliation.txt
+
+# CV files — don't commit colleagues' personal documents
+*.docx
+*.pdf
+
+# Config files with personal details — use config_template.yaml as a starting point
+# (comment this out if you want to commit your own configs)
+*_config.yaml
+*_config.json
+!config_template.yaml
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp

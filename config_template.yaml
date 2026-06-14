@@ -1,0 +1,43 @@
+# enigma-cv-tools — colleague config template
+# =============================================
+# Fill in this file for one colleague, then run:
+#   python bootstrap_colleague.py --config this_file.yaml
+#
+# All fields except pubmed_query are optional, but the more you provide,
+# the better the PubMed matching will be.
+
+# Full name (used in the reconciliation report)
+name: Elisabeth A. Wilde
+
+# ORCID identifier — strongly recommended if available.
+# Find yours at orcid.org. Format: XXXX-XXXX-XXXX-XXXX
+orcid: 0000-0002-9839-4428
+
+# PubMed author query — used in addition to ORCID to catch unlinked papers.
+# Standard format: Lastname AB[Author]
+# Use initials that match how the author appears in PubMed.
+pubmed_query: Wilde EA[Author]
+
+# Affiliation keywords — used to disambiguate common names.
+# Include current and past institutions.
+# Comment this section out if the author has a unique enough name.
+affiliation_hints:
+  - Utah
+  - Houston
+  - Baylor
+  - ENIGMA
+
+# Path to an existing CV file (.docx or .pdf) — optional.
+# If provided, the script will extract titles from the CV and cross-reference
+# them with PubMed results. Any CV entries not found in PubMed will be added
+# to the output CSV with a "CV only" note for manual verification.
+# Comment out or set to "" to skip CV parsing.
+cv_path: ./wilde_cv.docx
+
+# ── Less common options ───────────────────────────────────────────────
+
+# Title similarity threshold for CV-to-PubMed matching (default: 0.65).
+# Lower = more permissive matching (more false positives).
+# Higher = stricter matching (may miss some real matches).
+# You can also pass this on the command line: --threshold 0.7
+# match_threshold: 0.65
