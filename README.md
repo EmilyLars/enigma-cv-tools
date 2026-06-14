@@ -2,7 +2,7 @@
 
 Keep your academic CV publication list automatically up to date — powered by PubMed, Google Sheets, and a little AI.
 
-Built by the [ENIGMA Brain Injury Working Group](https://enigma.ini.usc.edu/ongoing-studies/enigma-tbi/) at the University of Utah. Designed for researchers with large, growing publication lists who are tired of updating their CV manually.
+Built by the [ENIGMA Brain Injury Working Group](https://enigma.ini.usc.edu/ongoing-studies/enigma-tbi/) at the University of Utah. Designed to ease the process of updating and adding publications on your CV.
 
 ---
 
