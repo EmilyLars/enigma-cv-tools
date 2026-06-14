@@ -41,3 +41,8 @@ cv_path: ./wilde_cv.docx
 # Higher = stricter matching (may miss some real matches).
 # You can also pass this on the command line: --threshold 0.7
 # match_threshold: 0.65
+
+# Your email address — used in the CrossRef API request header so they can
+# contact you if your queries cause issues. Enables the "polite pool" which
+# has better rate limits. Does not need to match any account.
+contact_email: your.email@institution.edu
